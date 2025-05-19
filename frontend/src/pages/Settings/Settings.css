@@ -1,0 +1,71 @@
+.terms-wrapper {
+    width: 100%; /* Set to 100% to fill the container */
+    max-width: 1000px; /* Optional: Limit the maximum width to avoid stretching too much on very large screens */
+    /* margin: 30px auto; */
+    padding: 0 20px; /* Added some padding to the sides */
+    background-color: transparent;
+    color: #2c3e50;
+  }
+  
+  .terms-title {
+    text-align: left; /* Left-align the title */
+    color: white;
+    font-size: 2.2rem;
+    /* margin-bottom: 20px; */
+  }
+  
+  .terms-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Left-align the text */
+  }
+  
+  .terms-content h3 {
+    color: #7d3cff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .terms-content p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .terms-content ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .terms-content ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .terms-content ul li strong {
+    color: #8259e4;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .terms-wrapper {
+      width: 100%; /* Ensure 100% width for smaller screens */
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .terms-title {
+      font-size: 1.8rem;
+    }
+  
+    .terms-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .terms-content p {
+      font-size: 14px;
+    }
+  }
+  

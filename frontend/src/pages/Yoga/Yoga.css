@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #d1cfe9, #9b97e2); /* Make sure this is here to fix background gap */
+}
+
+#root {
+  height: 100%;
+}
+
+.yoga-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #d1cfe9, #9b97e2);
+}
+
+.video-canvas-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.video-box {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pose-box {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.pose-performance {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pose-performance h4 {
+  margin: 8px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f1f1f;
+  text-align: left;
+}
+
+#webcam,
+#my-canvas {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+}
+
+.pose-img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Exercise Name Style */
+.exercise-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #292929;
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.secondary-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .video-canvas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box,
+  .pose-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pose-box {
+    margin-top: 30px;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .pose-performance {
+    text-align: center;
+  }
+}
+
+.exercise-name {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-align: left;
+}

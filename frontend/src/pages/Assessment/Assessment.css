@@ -1,0 +1,89 @@
+/* Outer container */
+.assessment-wrapper {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem 3rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Title */
+.assessment-title {
+  font-size: 2.2rem;
+  color: #4e73df;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Grid for input cards */
+.assessment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Each card */
+.input-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  width: 220px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* Image inside card */
+.input-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Input and Select */
+.input-card input,
+.input-card select {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #4e73df;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  grid-column: span 3;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #4e56e6;
+}
+
+/* Responsive layout tweaks */
+@media (max-width: 768px) {
+  .assessment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-btn {
+    grid-column: span 1;
+    width: 100%;
+  }
+}

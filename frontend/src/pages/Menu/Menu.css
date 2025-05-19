@@ -1,0 +1,56 @@
+/* Menu.css */
+.dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #13293D;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-list li {
+    margin: 20px 0;
+  }
+  
+  .menu-list li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .menu-list li a:hover,
+  .menu-list li a.active {
+    background-color:  #6c63ff;
+  }
+  
+  .main-content {
+    margin-left: 200px;   /* reduce from 220px to bring closer */
+    padding: 20px 40px;   /* reduced top/bottom padding */
+    width: calc(100% - 200px);  /* ensures proper sizing with margin */
+    background-color: #f5f5f5;
+  }
+  
